@@ -20,7 +20,8 @@ class BloggersController < ApplicationController
     end
     
     def show
-    
+    @blogger = Blogger.find(params[:id])
+    render :show
     end
     
     def destroy
